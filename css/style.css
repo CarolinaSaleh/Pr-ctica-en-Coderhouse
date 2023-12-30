@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Raleway&display=swap');
+
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-banner{
+    background-color: #D9D9D9;
+    text-align: center; 
+    font-size: 10;   
+    color: #676666;
+    font-family: 'Barlow', sans-serif;
+
+}
+.todoHeader{
+    background-color: #1E1E1E;
+}
+
+.elHeader{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+.elNombre{
+    font-size: 1.875rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: .1875rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu img{
+/* concepto de ancho y alto */
+    width:1.375rem;
+    height: 1.375rem;
+}
+.lupa img{
+    width: 1.375rem;
+    height: 1.375rem;
+}
+.user img{
+    width: 1.375rem;
+    height: 1.375rem;    
+}
+.bolso img{
+    width: 1.375rem;
+    height: 1.375rem;     
+}
+.sectionPrincipal {
+    background-image: url(../assets/coleccionVerano.jpg);
+    width: 100%;
+    height:550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+h1{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    background-blend-mode: darken;
+    font-size: 6.25rem;
+    /* padding: 1.25rem; */
+    margin: 1.25rem;
+    padding-top: 3.75rem;
+}
+.coleccion{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
+}
+.contenedorProductos {
+    background-size: 250px 250px ;
+    background-color: #151515;
+    margin: 20fr;
+    width: 100%;
+    border-color: #FFFFFF;
+    border-radius: 1.25rem;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: 1;
+    grid-template-areas: 
+    ". section1 section2 section3 .";
+    justify-content: center;
+    align-items: center;
+}
+.conjuntos{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.875rem;
+    letter-spacing: .1875rem;
+}
+.card1{
+    width: 12.5rem;
+    height: 25rem;
+    grid-area: section1;
+}
+
+.card1 img {
+    width: 17.5rem;
+    height: 21.875rem;
+    box-shadow: -.125rem .125rem .3125rem black;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.abrigo{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.875rem;
+    letter-spacing: .1875rem;
+}
+.card2{
+    width: 12.5rem;
+    height: 25rem;
+    grid-area: section2;
+}
+
+.card2 img {
+    width: 17.5rem;
+    height: 21.875rem;
+    box-shadow: -.125rem .125rem .3125rem black;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.accesorios{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.875rem;
+    letter-spacing: .1875rem;
+}
+
+.card3{
+    width: 12.5rem;
+    height: 25rem;
+    grid-area: section3;
+}
+
+.card3 img {
+    width: 17.5rem;
+    height: 21.875rem;
+    box-shadow: -.125rem .125rem .3125rem black;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+
+.loDeAbajo {
+    background-color: rgb(34, 34, 34);
+    color: #FFFFFF;
+    justify-content: space-around;
+}
+
+
+@media (max:width:1024px) {
+    .sectionPrincipal img{
+        object-fit: cover;
+        height: auto;
+        size: 1fr;
+
+    }
+    @media (max:width:501px) {
+        .sectionPrincipal img{
+            object-fit: cover;
+            height: auto;
+            size: 1fr;
+            
+        }
+    
+}
