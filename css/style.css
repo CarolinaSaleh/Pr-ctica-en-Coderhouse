@@ -183,19 +183,27 @@ h1{
 }
 
 
-@media (max:width:1024px) {
+@media (max-width:1024px) {
     .sectionPrincipal img{
         object-fit: cover;
         height: auto;
-        size: 1fr;
-
     }
-    @media (max:width:501px) {
+    }
+    @media (max-width:768px) {
         .sectionPrincipal img{
             object-fit: cover;
             height: auto;
-            size: 1fr;
-            
         }
-    
-}
+        }
+    @media (max-width:501px) {
+        .sectionPrincipal img{
+            object-fit: cover;
+            height: auto;
+        }
+        }
+    @media (max-width:320px) {
+        .sectionPrincipal img{
+            object-fit: cover;
+            height: auto;
+        }
+    }
