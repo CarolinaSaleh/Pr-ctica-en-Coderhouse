@@ -224,14 +224,29 @@ h1{
         }
         }
     @media (max-width:501px) {
-        .sectionPrincipal img{
-            object-fit: cover;
-            height: auto;
+        .contenedorProductos {
+            background-size: 250px 250px;
+            background-color: #151515;
+            margin: 20px;
+            width: 100%;
+            border-color: #FFFFFF;
+            border-radius: 1.25rem;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
-        }
+        
+    
+    }
     @media (max-width:320px) {
         .sectionPrincipal img{
             object-fit: cover;
             height: auto;
+            display: flex;
+            position: relative;
         }
     }
