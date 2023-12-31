@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bequem</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="todoHeader"> 
-        <div class="header-banner">
+    <header class="todoHeader conteiner-fluid"> 
+        <div class="text-center header-banner">
             <div>
                 <span>suscribite a nuestro newsletter y enterate de beneficios inperdibles</span>
             </div>
         </div>
-    <nav class="elHeader">
+    <nav class="elHeader text-center">
         <a href=""class="menu"><img src="../assets/menu (2).png" alt=""></a>
         <a class="elNombre" href="../index.html">BEQUEM</a>
             <!-- (li>a)*4 -->
-            <div>
-                <a href=""class="lupa"><img src="../assets/lupa.png" alt=""></a>
-                <a href=""class="user"><img src="../assets/usuario.png" alt=""></a>
-                <a href=""class="bolso"><img src="../assets/bolso.png" alt=""></a>
-            </div>
+        <div>
+            <a href=""class="lupa"><img src="../assets/lupa.png" alt=""></a>
+            <a href=""class="user"><img src="../assets/usuario.png" alt=""></a>
+            <a href=""class="bolso"><img src="../assets/bolso.png" alt=""></a>
+        </div>
     </nav>
     </header>
     <main>
@@ -35,8 +36,33 @@
         </section>
     </main>
 
-    <footer>
-
-    </footer>    
+    <footer class="loDeAbajo container-fluid py-5 mx-auto d-flex justify-content-center">
+        <div class="row">
+            <div class="info col-md-4 mb-4">
+                <h5>Sobre BEQUEM</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">— Filosofía e identidad</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">— Empresa sostenible</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">— Economía circular</a></li>
+                </ul>
+            </div>
+            <div class="ayuda col-md-4 mb-4">
+                <h5>Ayuda</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">— Contactos</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">— Guía de tallas</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">— Compras y pagos</a></li>
+                </ul>
+            </div>
+            <div class="redes-y-pagos col-md-4 mb-4">
+                <ul class="list-unstyled text-small">
+                    <h6>Seguinos</h6>
+                    <h6>Métodos de pago</h6>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../bootstrap/bootstrap-5.3.2-dist/bootstrap/js/bootstrap.js"></script>   
 </body>
 </html>
