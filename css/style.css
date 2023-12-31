@@ -212,6 +212,11 @@ h1{
 }
 
 @media (max-width:1024px) {
+    .todoHeader{
+        width: 9.375rem;
+
+        object-fit: cover;
+    }
     .sectionPrincipal img{
         object-fit: cover;
         height: auto;
@@ -239,7 +244,12 @@ h1{
             align-items: center;
             position: relative;
         }
-        
+        .sectionPrincipalVerano{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
     
     }
     @media (max-width:320px) {
@@ -248,5 +258,26 @@ h1{
             height: auto;
             display: flex;
             position: relative;
+        }
+        .contenedorProductos {
+            background-size: 250px 250px;
+            background-color: #151515;
+            margin: 20px;
+            width: 100%;
+            border-color: #FFFFFF;
+            border-radius: 1.25rem;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .sectionPrincipalVerano{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
         }
     }
