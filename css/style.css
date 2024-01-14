@@ -212,11 +212,6 @@ h1{
 }
 
 @media (max-width:1024px) {
-    .todoHeader{
-        width: 9.375rem;
-
-        object-fit: cover;
-    }
     .sectionPrincipal img{
         object-fit: cover;
         height: auto;
