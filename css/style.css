@@ -160,7 +160,7 @@ h1{
     line-height: 1.5;
 }
 
-.contenedorProductos {
+/* .contenedorProductos {
     background-size: 250px 250px ;
     background-color: #151515;
     margin: 20fr;
@@ -175,10 +175,14 @@ h1{
     ". section1 section2 section3 .";
     justify-content: center;
     align-items: center;
-}
+} */
+/* .contenedorProductos img{
+    display: flex;
+    justify-content: space-between;
+} */
 
 .conjuntos{
-    color: #FFFFFF;
+    color: #141414;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
@@ -186,22 +190,22 @@ h1{
     letter-spacing: .1875rem;
 }
 
-.card1{
+/* .card1{
     width: 12.5rem;
     height: 25rem;
     grid-area: section1;
-}
+} */
 
-.card1 img {
+/* .card1 img {
     width: 17.5rem;
     height: 21.875rem;
     box-shadow: -.125rem .125rem .3125rem black;
     border-radius: 1.25rem;
     overflow: hidden;
-}
+} */
 
 .abrigo{
-    color: #FFFFFF;
+    color: #141414;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
@@ -209,7 +213,7 @@ h1{
     letter-spacing: .1875rem;
 }
 
-.card2{
+/* .card2{
     width: 12.5rem;
     height: 25rem;
     grid-area: section2;
@@ -220,18 +224,18 @@ h1{
     height: 21.875rem;
     box-shadow: -.125rem .125rem .3125rem black;
     border-radius: 1.25rem;
-    overflow: hidden;
-}
+    overflow: hidden; */
+
 
 .accesorios{
-    color: #FFFFFF;
+    color: #141414;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.875rem;
     letter-spacing: .1875rem;
 }
-
+/* 
 .card3{
     width: 12.5rem;
     height: 25rem;
@@ -244,7 +248,7 @@ h1{
     box-shadow: -.125rem .125rem .3125rem black;
     border-radius: 1.25rem;
     overflow: hidden;
-}
+} */
 /* lo que lo hace responsive */
 @media (max-width:991px) {
     html{
