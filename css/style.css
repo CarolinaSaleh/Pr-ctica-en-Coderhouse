@@ -22,9 +22,10 @@ font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     transition: .2s linear;
 }
+
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 4rem;
     overflow-x: hidden;
 }
 /* .header-banner{
@@ -56,6 +57,7 @@ html{
     text-align: center;
     cursor: pointer;
 } */
+
 .header-banner{
     background-color: #D9D9D9;
     text-align: center; 
@@ -64,81 +66,100 @@ html{
     font-family: 'Barlow', sans-serif;
 
 }
+
 .todoHeader{
     background-color: #1E1E1E;
 }
+
 .elHeader{
     top: 0; left: 0; right: 0;
     background-color: #151515;
-    padding: 2rem 2%;
+    padding: .15rem 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 .5rem 10rem rgba(0, 0, 0,.1);
 }
+
 .elNombre{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #FFFFFF;
     font-weight: bolder;
     text-decoration: none;
+    text-align: center;
+    margin-left: 5.5rem;
     
 } 
-.navbar a{
-    font-size: 1.5rem;
-    padding: 0 1.5rem;
-    text-decoration: none;
-    color: #D9D9D9;
-}
 
 .menu img{
-/* concepto de ancho y alto */
+
     width:1.375rem;
     height: 1.375rem;
     margin: 1.25rem;
+    border-radius: .9rem;
+    cursor: pointer; 
 }
+
 .lupa img{
     width: 1.375rem;
     height: 1.375rem;
     margin: 1.25rem;
+    cursor: pointer;
 }
+
 .user img{
     width: 1.375rem;
     height: 1.375rem; 
-    margin: 1.25rem;   
+    margin: 1.25rem; 
+    cursor: pointer;  
 }
+
 .bolso img{
     width: 1.375rem;
     height: 1.375rem;
-    margin: 1.25rem;     
+    margin: 1.25rem; 
+    cursor: pointer;    
 }
 
 .sectionPrincipal {
     background-image: url(../assets/coleccionVerano.jpg);
-    width: 100%;
-    height:550px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     overflow: hidden;
+    padding: 15rem 5%;
 }
-h1{
+.titulo-y-link{
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
+    background-blend-mode: darken;
+}
+
+h1{
     font-weight: 900;
     background-blend-mode: darken;
-    font-size: 6.25rem;
+    font-size: 8rem;
     /* padding: 1.25rem; */
     margin: 1.25rem;
-    padding-top: 3.75rem;
+    max-width: 80rem;
 }
+
 .coleccion{
-    color: #FFFFFF;
-    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
     font-weight: 400;
     font-size: 1.875rem;
-    padding: 1.25rem;
+    padding: .5rem ;
     margin: 1.25rem;
+    max-width: 50rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 1.5;
 }
+
 .contenedorProductos {
     background-size: 250px 250px ;
     background-color: #151515;
@@ -155,6 +176,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
 .conjuntos{
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
@@ -163,11 +185,13 @@ h1{
     font-size: 1.875rem;
     letter-spacing: .1875rem;
 }
+
 .card1{
     width: 12.5rem;
     height: 25rem;
     grid-area: section1;
 }
+
 .card1 img {
     width: 17.5rem;
     height: 21.875rem;
@@ -175,6 +199,7 @@ h1{
     border-radius: 1.25rem;
     overflow: hidden;
 }
+
 .abrigo{
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
@@ -183,11 +208,13 @@ h1{
     font-size: 1.875rem;
     letter-spacing: .1875rem;
 }
+
 .card2{
     width: 12.5rem;
     height: 25rem;
     grid-area: section2;
 }
+
 .card2 img {
     width: 17.5rem;
     height: 21.875rem;
@@ -195,6 +222,7 @@ h1{
     border-radius: 1.25rem;
     overflow: hidden;
 }
+
 .accesorios{
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
@@ -203,15 +231,98 @@ h1{
     font-size: 1.875rem;
     letter-spacing: .1875rem;
 }
+
 .card3{
     width: 12.5rem;
     height: 25rem;
     grid-area: section3;
 }
+
 .card3 img {
     width: 17.5rem;
     height: 21.875rem;
     box-shadow: -.125rem .125rem .3125rem black;
     border-radius: 1.25rem;
     overflow: hidden;
+}
+/* lo que lo hace responsive */
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .iconos{
+        display: block;
+        size: auto;
+    }
+    
+}
+@media (max-width:800px) {
+    html{
+        font-size: 80%;
+    }
+    .iconos{
+        display: block;
+        size: auto;
+    }
+    
+}
+@media (max-width:768px){
+    .iconos{
+        display: block;
+        size: auto;
+    }
+    .coleccion{
+        font-size: 90%;
+    }      
+    
+}
+@media (max-width:450px) {
+    html{
+        font-size: 85%;
+    }
+    .iconos{
+        display: block;
+        size: auto;
+    }
+    .coleccion{
+        font-size: 80%;
+    }  
+}
+@media (max-width:320px) {
+    html{
+        font-size: 80%;
+    }    
+    .iconos{
+        display: block;
+        size: 60%;
+    }
+    .header-banner{
+        font-size: 70%;
+    }
+    .elNombre{
+        font-size: 1.375rem;
+        margin-left: 0;
+    }
+    .coleccion a{
+        font-size: 70%;
+    }  
+}
+@media (max-width:260px) {
+    html{
+        font-size: 70%;
+    }    
+    .iconos{
+        display: block;
+        size: 30%;
+    }
+    .header-banner{
+        font-size: 65%;
+    }
+    .elNombre{
+        font-size: 1.375rem;
+        margin-left: 0;
+    }
+    .coleccion a{
+        font-size: 70%;
+    }  
 }
